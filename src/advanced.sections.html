@@ -1,0 +1,61 @@
+<title>Advanced</title>
+<section>
+	<h1>Generate a password</h1>
+	<p>Here you can modify the number of words, numbers and symbols in the
+		password</p>
+</section>
+<section>
+	<form>
+		<label for="words">
+			Words
+		</label>
+		<input type="number" placeholder="Number of words. Eg. 10" id="words">
+		<label for="numbers">
+			Numbers
+		</label>
+		<input type="number" placeholder="Number of digits. Eg. 10" id="numbers">
+		<label for="symbols">
+			Symbols
+		</label>
+		<input type="number" placeholder="Number of symbols. Eg. 10" id="symbols">
+		<p>Shuffle?</p>
+		<label class="css-radio" for="shuffle">
+			Yes
+			<input type="radio" name="var" value="1" id="shuffle" checked="checked">
+			<span class="check-mark"></span>
+		</label>
+		<label class="css-radio" for="shuffle-no">
+			No
+			<input type="radio" name="var" value="2" id="shuffle-no">
+			<span class="check-mark"></span>
+		</label>
+		<p>Capitalize first letter of each word?</p>
+		<label class="css-radio" for="uppercase">
+			Yes
+			<input type="radio" name="var" value="1" id="uppercase" checked="checked">
+			<span class="check-mark"></span>
+		</label>
+		<label class="css-radio" for="uppercase-no">
+			No
+			<input type="radio" name="var" value="2" id="uppercase-no">
+			<span class="check-mark"></span>
+		</label>
+		<label for="wordlist">
+			Wordlist
+		</label>
+		<select id="wordlist">
+			<option value="1k">1k</option>
+			<option value="10k" selected="selected">10k</option>
+			<option value="100k">100k</option>
+		</select>
+		<label for="output">
+			Output:
+		</label>
+		<textarea rows="4" cols="1" id="output"></textarea>
+	</form>
+	<div class="pair">
+		<button onclick="start()"> Run</button>
+		<button onclick="copy()"> Copy Output </button>
+	</div>
+</section>
+<script>password.js</script>

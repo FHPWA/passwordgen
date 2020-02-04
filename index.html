@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<link rel="preload" href="https://fredhappyface.github.io/fonts/FiraSansNF.woff2" as="font" type="font/woff2">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://fredhappyface.github.io/css/main.css">
+	<script>
+		if ("serviceWorker" in navigator) {
+			navigator.serviceWorker.register("/PWA.PasswordGen/sw.js", { scope: "/PWA.PasswordGen/" });
+		}
+		/* read data from local storage and set css vars*/
+		let settingData = JSON.parse(localStorage.getItem('com.fredhappyface'));
+		const declaration = document.styleSheets[0].cssRules[0].style;
+		declaration.setProperty("--text-mod", (settingData.textSize.size ? settingData.textSize.size : "1"))
+		if (settingData.theme.name !== "auto"){
+			declaration.setProperty("--var-c-primary", (settingData.theme.cPrimary ? settingData.theme.cPrimary : "#FAFAFA"))
+			declaration.setProperty("--var-c-secondary", (settingData.theme.cSecondary ? settingData.theme.cSecondary : "#EAEAEB"))
+			declaration.setProperty("--var-c-text", (settingData.theme.cText ? settingData.theme.cText : "#383A42"))
+			declaration.setProperty("--var-c-black", (settingData.theme.cBlack ? settingData.theme.cBlack : "0"))
+		}
+	</script>
+
+	<meta name="Description" content="Author: FredHappyface; Category: Cryptography,
+	Proof of concept; Cost: Free">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--Android app icon-->
+	<link rel="manifest" href="/PWA.PasswordGen/manifest.json">
+	<meta name="theme-color" content="#000000" />
+
+	<!--iOS touch icon-->
+	<link rel="apple-touch-icon" sizes="180x180" href="images/appicons/square-180.png">
+
+	<!--Bookmark, Browser favicon-->
+	<link rel="icon" type="image/png" sizes="256x256" href="images/appicons/squircle-256.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/appicons/squircle-256.png">
+
+	<!--Windows 8, 10 tile -->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" sizes="150x150" content="images/appicons/square-180.png">
+	<meta name="msapplication-starturl" content="/PWA.PasswordGen/">
+
+	<!--Title-->
+	<title>Simple</title>
+
+
+</head>
+
+<body>
+
+	<div class="section--nav-bar c-app-bar--password">
+
+		<div class="app-bar">
+			<div class="section__content">
+				<div class="left">
+					<h1>PasswordGen</h1>
+				</div>
+				<div class="pair right">
+					<a href="https://fredhappyface.github.io/PWA.Home/info.html">
+						<h1>&#xf449;</h1>
+					</a>
+					<a href="https://fredhappyface.github.io/PWA.Home/settings.html">
+						<h1>&#xf423;</h1>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<nav id="js-nav">
+			<ul class="nav__content" id="js-nav__content">
+				<li>
+					<a href="index.html" class="current">Simple</a>
+				</li>
+				<li>
+					<a href="advanced.html" >Advanced</a>
+				</li>
+
+			</ul>
+			<a class="overflow" id="js-overflow">More...</a>
+			<ul class="nav__overflow" id="js-nav__overflow">
+			</ul>
+		</nav>
+	</div>
+
+	<div class="buffer--nav-bar">
+	</div>
+
+	<div id="js-toast" >
+		<div><p id="js-toast__text" class="c-toast"></p></div>
+	</div>
+
+	<div class="section c-secondary">
+		<div class="section__content">
+			
+	<h1>Generate a password</h1>
+	<p>Tap/ click below to generate a password</p>
+
+		</div>
+	</div>
+	<div class="section c-primary">
+		<div class="section__content">
+			
+	<form>
+		<label for="output">
+			Output:
+		</label>
+		<textarea rows="4" cols="1" id="output"></textarea>
+	</form>
+	<div class="pair">
+		<button onclick="start()">&#xF489; Run</button>
+		<button onclick="copy()">&#xF429; Copy Output </button>
+	</div>
+
+		</div>
+	</div>
+
+	<script src="scripts/password.js"></script>
+
+	<script src="https://fredhappyface.github.io/scripts/script.js"></script>
+	<script src="https://fredhappyface.github.io/scripts/navbar.js"></script>
+
+</body>
+
+</html>
