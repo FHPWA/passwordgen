@@ -1,19 +1,6 @@
 //jQuery.ajaxSetup({async:false});
 /*jshint esversion: 6 */
 
-// returns a random integer between min (inclusive) and max (exclusive)
-function getRandomInt(min, max) {
-	let rand = window.crypto.getRandomValues(new Uint8Array(1)) / 256
-	return Math.floor(rand * (max - min)) + min;
-}
-
-function shuffle(array) {
-	for (let index = array.length - 1; index > 0; index--) {
-		const swap = getRandomInt(0, array.length);
-		[array[index], array[swap]] = [array[swap], array[index]];
-	}
-	return array;
-}
 // return a string with the fist letter capitalised
 function capitaliseFirstLetter(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
