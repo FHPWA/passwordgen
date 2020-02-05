@@ -11,3 +11,7 @@ and pasting html files to replace content was tedious than it needed to be.
 - Custom wordlist can be used
 - Generate ASCII passwords (similar to those in Lastpass and other password
 managers)
+
+## 2020.2 - 2020/02/05
+- Password strength meter
+- Screenshots for the README
