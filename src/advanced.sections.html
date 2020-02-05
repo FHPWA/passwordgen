@@ -18,36 +18,57 @@
 			Symbols
 		</label>
 		<input type="number" placeholder="Number of symbols. Eg. 10" id="symbols">
+		<label for="ascii">
+			Random ASCII
+		</label>
+		<input type="number" placeholder="Number of ASCII characters. Eg. 10" id="ascii">
 		<p>Shuffle?</p>
 		<label class="css-radio" for="shuffle">
 			Yes
-			<input type="radio" name="var" value="1" id="shuffle" checked="checked">
+			<input type="radio" name="shuffle" value="1" id="shuffle" checked="checked">
 			<span class="check-mark"></span>
 		</label>
 		<label class="css-radio" for="shuffle-no">
 			No
-			<input type="radio" name="var" value="2" id="shuffle-no">
+			<input type="radio" name="shuffle" value="2" id="shuffle-no">
 			<span class="check-mark"></span>
 		</label>
 		<p>Capitalize first letter of each word?</p>
 		<label class="css-radio" for="uppercase">
 			Yes
-			<input type="radio" name="var" value="1" id="uppercase" checked="checked">
+			<input type="radio" name="uppercase" value="1" id="uppercase" checked="checked">
 			<span class="check-mark"></span>
 		</label>
 		<label class="css-radio" for="uppercase-no">
 			No
-			<input type="radio" name="var" value="2" id="uppercase-no">
+			<input type="radio" name="uppercase" value="2" id="uppercase-no">
 			<span class="check-mark"></span>
 		</label>
-		<label for="wordlist">
-			Wordlist
+		<p>Use custom wordlist?</p>
+		<label class="css-radio" for="customwl">
+			Yes
+			<input type="radio" name="customwl" value="1" id="customwl">
+			<span class="check-mark"></span><br>
+			<label class="css-file" for="files">
+				&#xf47b; Upload
+				<input type="file" id="files" onchange="uploadWL()" />
+			</label>
+			<textarea style="display: none;" rows="20" cols="1" id="list"></textarea>
 		</label>
-		<select id="wordlist">
-			<option value="1k">1k</option>
-			<option value="10k" selected="selected">10k</option>
-			<option value="100k">100k</option>
-		</select>
+		<label class="css-radio" for="customwl-no">
+			No
+			<input type="radio" name="customwl" value="2" id="customwl-no" checked="checked">
+			<span class="check-mark"></span><br>
+			<label for="wordlist">
+				Wordlist
+			</label>
+			<select id="wordlist">
+				<option value="1k">1k</option>
+				<option value="10k" selected="selected">10k</option>
+				<option value="100k">100k</option>
+			</select>
+		</label>
+
 		<label for="output">
 			Output:
 		</label>

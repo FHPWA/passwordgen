@@ -11,23 +11,26 @@
 		}
 		/* read data from local storage and set css vars*/
 		let settingData = JSON.parse(localStorage.getItem('com.fredhappyface'));
-		const declaration = document.styleSheets[0].cssRules[0].style;
-		declaration.setProperty("--text-mod", (settingData.textSize.size ? settingData.textSize.size : "1"))
+		const rootStyles = document.styleSheets[0].cssRules[0].style;
+		const darkStyles = document.styleSheets[0].cssRules[1].cssRules[0].style;
+		rootStyles.setProperty("--text-mod", (settingData.textSize.size ? settingData.textSize.size : "1"))
 		if (settingData.theme.name !== "auto"){
-			declaration.setProperty("--var-c-primary", (settingData.theme.cPrimary ? settingData.theme.cPrimary : "#FAFAFA"))
-			declaration.setProperty("--var-c-secondary", (settingData.theme.cSecondary ? settingData.theme.cSecondary : "#EAEAEB"))
-			declaration.setProperty("--var-c-text", (settingData.theme.cText ? settingData.theme.cText : "#383A42"))
-			declaration.setProperty("--var-c-black", (settingData.theme.cBlack ? settingData.theme.cBlack : "0"))
+			rootStyles.setProperty("--var-c-primary", (settingData.theme.cPrimary ? settingData.theme.cPrimary : "#FAFAFA"))
+			rootStyles.setProperty("--var-c-secondary", (settingData.theme.cSecondary ? settingData.theme.cSecondary : "#EAEAEB"))
+			rootStyles.setProperty("--var-c-text", (settingData.theme.cText ? settingData.theme.cText : "#383A42"))
+			darkStyles.setProperty("--var-c-primary", (settingData.theme.cPrimary ? settingData.theme.cPrimary : "#181A1F"))
+			darkStyles.setProperty("--var-c-secondary", (settingData.theme.cSecondary ? settingData.theme.cSecondary : "#282C34"))
+			darkStyles.setProperty("--var-c-text", (settingData.theme.cText ? settingData.theme.cText : "#ABB2BF"))
+			rootStyles.setProperty("--var-c-black", (settingData.theme.cBlack ? settingData.theme.cBlack : "0"))
 		}
 	</script>
 
-	<meta name="Description" content="Author: FredHappyface; Category: Cryptography,
-	Proof of concept; Cost: Free">
+	<meta name="Description" content="Author: FredHappyface; Cost: Free">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!--Android app icon-->
 	<link rel="manifest" href="/PWA.PasswordGen/manifest.json">
-	<meta name="theme-color" content="#000000" />
+	<meta name="theme-color" content="#884BFA" />
 
 	<!--iOS touch icon-->
 	<link rel="apple-touch-icon" sizes="180x180" href="images/appicons/square-180.png">
@@ -37,7 +40,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/appicons/squircle-256.png">
 
 	<!--Windows 8, 10 tile -->
-	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#884BFA">
 	<meta name="msapplication-TileImage" sizes="150x150" content="images/appicons/square-180.png">
 	<meta name="msapplication-starturl" content="/PWA.PasswordGen/">
 
@@ -115,36 +118,57 @@
 			Symbols
 		</label>
 		<input type="number" placeholder="Number of symbols. Eg. 10" id="symbols">
+		<label for="ascii">
+			Random ASCII
+		</label>
+		<input type="number" placeholder="Number of ASCII characters. Eg. 10" id="ascii">
 		<p>Shuffle?</p>
 		<label class="css-radio" for="shuffle">
 			Yes
-			<input type="radio" name="var" value="1" id="shuffle" checked="checked">
+			<input type="radio" name="shuffle" value="1" id="shuffle" checked="checked">
 			<span class="check-mark"></span>
 		</label>
 		<label class="css-radio" for="shuffle-no">
 			No
-			<input type="radio" name="var" value="2" id="shuffle-no">
+			<input type="radio" name="shuffle" value="2" id="shuffle-no">
 			<span class="check-mark"></span>
 		</label>
 		<p>Capitalize first letter of each word?</p>
 		<label class="css-radio" for="uppercase">
 			Yes
-			<input type="radio" name="var" value="1" id="uppercase" checked="checked">
+			<input type="radio" name="uppercase" value="1" id="uppercase" checked="checked">
 			<span class="check-mark"></span>
 		</label>
 		<label class="css-radio" for="uppercase-no">
 			No
-			<input type="radio" name="var" value="2" id="uppercase-no">
+			<input type="radio" name="uppercase" value="2" id="uppercase-no">
 			<span class="check-mark"></span>
 		</label>
-		<label for="wordlist">
-			Wordlist
+		<p>Use custom wordlist?</p>
+		<label class="css-radio" for="customwl">
+			Yes
+			<input type="radio" name="customwl" value="1" id="customwl">
+			<span class="check-mark"></span><br>
+			<label class="css-file" for="files">
+				&#xF47B; Upload
+				<input type="file" id="files" onchange="uploadWL()">
+			</label>
+			<textarea style="display: none;" rows="20" cols="1" id="list"></textarea>
 		</label>
-		<select id="wordlist">
-			<option value="1k">1k</option>
-			<option value="10k" selected="selected">10k</option>
-			<option value="100k">100k</option>
-		</select>
+		<label class="css-radio" for="customwl-no">
+			No
+			<input type="radio" name="customwl" value="2" id="customwl-no" checked="checked">
+			<span class="check-mark"></span><br>
+			<label for="wordlist">
+				Wordlist
+			</label>
+			<select id="wordlist">
+				<option value="1k">1k</option>
+				<option value="10k" selected="selected">10k</option>
+				<option value="100k">100k</option>
+			</select>
+		</label>
+
 		<label for="output">
 			Output:
 		</label>

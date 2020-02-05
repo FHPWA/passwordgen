@@ -18,7 +18,6 @@ Current options are 1k, 10k, 100k. Add symbols and numbers, shuffle and
 optionally capitalize the first character of each word.
 
 ## TODO
-- Upload personal wordlists
 - Password strength meter
 - Screenshots for the README
 

@@ -28,30 +28,47 @@ function generateNumbers(quantity) {
 	return numbers;
 }
 
-function generateSymbols(quantity) {
-	let symbols = [];
+function genRangeChar(lower, upper, quantity){
+	let chars = [];
 	for (let index = 0; (index < quantity); index += 1) {
-		symbols.push(String.fromCharCode(getRandomInt(33, 44)));
+		chars.push(String.fromCharCode(getRandomInt(lower, upper)));
 	}
-	return symbols;
+	return chars;
+}
+
+function generateSymbols(quantity) {
+	return genRangeChar(33, 44, quantity);
+}
+
+function generateAscii(quantity){
+	return genRangeChar(33, 127, quantity);
+}
+
+
+function generateWordsOffline(container, quantity){
+	return wordsFromList(document.getElementById(container).value.split("\n"), quantity);
+}
+
+function wordsFromList(list, quantity){
+	let words = [];
+	for (let index = 0; (index < quantity); index += 1) {
+		words.push(list[getRandomInt(0, list.length)]);
+	}
+	return words;
 }
 
 
 async function generateWords(listSize, quantity) {
-	let words = [];
-	lines = await grabFile(listSize);
-	for (let index = 0; (index < quantity); index += 1) {
-		words.push(lines[getRandomInt(0, lines.length)]);
-	}
-	return words;
+	return wordsFromList(await grabFile(listSize), quantity);
 }
+
+
 
 async function grabFile(listSize) {
 	return new Promise(function (resolve, reject) {
 		let rawFile = new XMLHttpRequest();
 		rawFile.open("GET", "https://fredhappyface.github.io/PWA.PasswordGen/resources/" + listSize + ".txt");
 		rawFile.onload = function () {
-			console.log("GRAB FILE")
 			resolve(rawFile.responseText.split("\n"))
 		}
 		rawFile.send(null)
@@ -80,11 +97,17 @@ function grabBool(elementId, def) {
 
 async function start() {
 	// Get Numbers
-	let numbers = generateNumbers(grabValue("numbers", 2));
+	const numbers = generateNumbers(grabValue("numbers", 2));
 	// Get Symbols
-	let symbols = generateSymbols(grabValue("symbols", 2));
+	const symbols = generateSymbols(grabValue("symbols", 2));
+	// Get ASCII
+	const ascii = generateAscii(grabValue("ascii", 0));
 	// Get Words
-	let words = await generateWords("10k", grabValue("words", 2));
+	const wordsQ = grabValue("words", 2);
+	let words = await generateWords(grabValue("wordlist", "10k"), wordsQ);
+	if(grabBool("customwl", false)){
+		words = generateWordsOffline("list", wordsQ);
+	}
 
 	if (grabBool("uppercase", true)) {
 		for (let index = 0; index < words.length; index++) {
@@ -93,11 +116,16 @@ async function start() {
 	}
 
 
-	let everything = words.concat(numbers, symbols);
+	let everything = words.concat(numbers, symbols, ascii);
 
 	if (grabBool("shuffle", false)) {
 		everything = shuffle(everything);
 	}
 
 	document.getElementById("output").value = everything.join("")
+}
+
+
+function uploadWL() { // eslint-disable-line no-unused-vars
+	fileData = upload(document.getElementById("files").files, ["list"]);
 }
