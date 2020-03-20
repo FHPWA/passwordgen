@@ -54,7 +54,7 @@ async function generateWords(listSize, quantity) {
 async function grabFile(listSize) {
 	return new Promise(function (resolve, reject) {
 		let rawFile = new XMLHttpRequest();
-		rawFile.open("GET", "https://fredhappyface.github.io/PWA.PasswordGen/resources/" + listSize + ".txt");
+		rawFile.open("GET", "https://FHPWA.github.io/passwordgen/resources/" + listSize + ".txt");
 		rawFile.onload = function () {
 			resolve(rawFile.responseText.split("\n"))
 		}
