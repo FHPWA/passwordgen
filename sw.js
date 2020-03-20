@@ -7,7 +7,7 @@ self.addEventListener("install", function(event) {
 	event.waitUntil(
 		caches.open(CACHE).then(function(cache) {
 			return cache.addAll(precacheFiles);
-		})
+		}),
 	);
 });
 
@@ -28,7 +28,7 @@ self.addEventListener("fetch", function(event) {
 				event.waitUntil(
 					fetch(event.request).then(function(response) {
 						return updateCache(event.request, response);
-					})
+					}),
 				);
 				return response;
 			},
@@ -42,8 +42,8 @@ self.addEventListener("fetch", function(event) {
 					})
 					.catch(function(error) {
 					});
-			}
-		)
+			},
+		),
 	);
 });
 
