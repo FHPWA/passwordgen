@@ -2,23 +2,23 @@
 	"name": "PasswordGen",
 	"short_name": "PasswordGen",
 	"lang": "en-GB",
-	"start_url": "/PWA.PasswordGen/",
+	"start_url": "/passwordgen/",
 	"display": "standalone",
 	"background_color": "#000000",
 	"theme_color": "#884BFA",
 	"icons": [
 		{
-			"src": "/PWA.PasswordGen/images/appicons/round-192.png",
+			"src": "/passwordgen/images/appicons/round-192.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "/PWA.PasswordGen/images/appicons/round-512.png",
+			"src": "/passwordgen/images/appicons/round-512.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		},
 		{
-			"src": "/PWA.PasswordGen/images/appicons/mask.png",
+			"src": "/passwordgen/images/appicons/mask.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "maskable"

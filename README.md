@@ -1,15 +1,12 @@
-<p float="left">
-<a href="../../"><img src="https://img.shields.io/github/languages/top/FredHappyface/PWA.PasswordGen.svg?style=flat-square" alt="Github top language"></a>
-<a href="https://www.codacy.com/manual/FredHappyface/PWA.PasswordGen"><img src="https://img.shields.io/codacy/grade/[codacy-proj-id].svg?style=flat-square" alt="Codacy grade"></a>
-<a href="https://www.codacy.com/manual/FredHappyface/PWA.PasswordGen"><img src="https://img.shields.io/codacy/coverage/[codacy-proj-id].svg?style=flat-square" alt="Codacy coverage"></a>
-<a href="../../"><img src="https://img.shields.io/github/repo-size/FredHappyface/PWA.PasswordGen.svg?style=flat-square" alt="Repository size"></a>
-<a href="../../issues"><img src="https://img.shields.io/github/issues/FredHappyface/PWA.PasswordGen.svg?style=flat-square" alt="Issues"></a>
-<a href="/LICENSE.md"><img src="https://img.shields.io/github/license/FredHappyface/PWA.PasswordGen.svg?style=flat-square" alt="License"></a>
-<a href="../../commits/master"><img src="https://img.shields.io/github/commit-activity/m/FredHappyface/PWA.PasswordGen.svg?style=flat-square" alt="Commit activity"></a>
-<a href="../../commits/master"><img src="https://img.shields.io/github/last-commit/FredHappyface/PWA.PasswordGen.svg?style=flat-square" alt="Last commit"></a>
-</p>
+[![Github top language](https://img.shields.io/github/languages/top/FHPWA/PasswordGen.svg?style=for-the-badge)](../../)
+[![Codacy grade](https://img.shields.io/codacy/grade/[codacy-proj-id].svg?style=for-the-badge)](https://www.codacy.com/manual/FHPWA/PasswordGen)
+[![Repository size](https://img.shields.io/github/repo-size/FHPWA/PasswordGen.svg?style=for-the-badge)](../../)
+[![Issues](https://img.shields.io/github/issues/FHPWA/PasswordGen.svg?style=for-the-badge)](../../issues)
+[![License](https://img.shields.io/github/license/FHPWA/PasswordGen.svg?style=for-the-badge)](/LICENSE.md)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/FHPWA/PasswordGen.svg?style=for-the-badge)](../../commits/master)
+[![Last commit](https://img.shields.io/github/last-commit/FHPWA/PasswordGen.svg?style=for-the-badge)](../../commits/master)
 
-# PWA.PasswordGen
+# PasswordGen
 
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
@@ -36,7 +33,7 @@ See the [CHANGELOG](/CHANGELOG.md) for more information.
 clone to
 4. Type 'git clone' followed by URL in step 2
 ```bash
-$ git clone https://github.com/FredHappyface/PWA.PasswordGen
+$ git clone https://github.com/FHPWA/PasswordGen
 ```
 
 More information can be found at

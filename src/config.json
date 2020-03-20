@@ -1,19 +1,19 @@
 {
 	"base": {
-		"projectFullName": "PWA.PasswordGen",
+		"projectFullName": "passwordgen",
 		"projectShortName": "PasswordGen",
 		"stylesNamespace": "password",
 		"projectColour": "#884BFA",
 		"isNavigation": true,
 		"precacheFiles": [
 			{
-				"fileName": "PWA.PasswordGen/"
+				"fileName": "passwordgen/"
 			},
 			{
-				"fileName": "PWA.PasswordGen/index.html"
+				"fileName": "passwordgen/index.html"
 			},
 			{
-				"fileName": "PWA.PasswordGen/advanced.html"
+				"fileName": "passwordgen/advanced.html"
 			}
 		]
 	},
