@@ -1,5 +1,5 @@
 const CACHE = "PasswordGen";
-const precacheFiles = ["/passwordgen/","/passwordgen/index.html","/passwordgen/advanced.html",
+const precacheFiles = ["/passwordgen/","/passwordgen/index.html","/passwordgen/advanced.html","/passwordgen/check.html",
 ];
 
 self.addEventListener("install", function(event) {

@@ -45,7 +45,7 @@
 	<meta name="msapplication-starturl" content="/passwordgen/">
 
 	<!--Title-->
-	<title>Simple</title>
+	<title>Check Password</title>
 
 
 </head>
@@ -73,13 +73,13 @@
 		<nav id="js-nav">
 			<ul class="nav__content" id="js-nav__content">
 				<li>
-					<a href="index.html" class="current">Simple</a>
+					<a href="index.html" >Simple</a>
 				</li>
 				<li>
 					<a href="advanced.html" >Advanced</a>
 				</li>
 				<li>
-					<a href="check.html" >Check Password</a>
+					<a href="check.html" class="current">Check Password</a>
 				</li>
 
 			</ul>
@@ -99,8 +99,8 @@
 	<div class="section c-secondary">
 		<div class="section__content">
 			
-	<h1>Generate a password</h1>
-	<p>Tap/ click below to generate a password</p>
+	<h1>Check a password</h1>
+	<p>Tap/ click below to check the strength of a password</p>
 
 		</div>
 	</div>
@@ -108,16 +108,15 @@
 		<div class="section__content">
 			
 	<form>
-		<label for="output">
-			Output:
+		<label for="input">
+			Input:
 		</label>
-		<textarea rows="4" cols="1" id="output"></textarea>
+		<textarea rows="4" cols="1" id="input"></textarea>
 		<label for="password-strength">Password Strength</label>
 		<progress id="password-strength" max="100" value="0"></progress>
 	</form>
-	<div class="pair">
-		<button onclick="start()">&#xF489; Run</button>
-		<button onclick="copy()">&#xF429; Copy Output </button>
+	<div>
+		<button onclick="check()">&#xF489; Run</button>
 	</div>
 
 		</div>

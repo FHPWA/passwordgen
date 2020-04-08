@@ -14,11 +14,15 @@
 			},
 			{
 				"fileName": "passwordgen/advanced.html"
+			},
+			{
+				"fileName": "passwordgen/check.html"
 			}
 		]
 	},
 	"files": [
 		"index.sections.html",
-		"advanced.sections.html"
+		"advanced.sections.html",
+		"check.sections.html"
 	]
 }
