@@ -21,8 +21,8 @@
 		"eslint-config-google": "^0.14.0"
 	},
 	"dependencies": {
+		"axios": "^0.19.2",
 		"cheerio": "^1.0.0-rc.3",
-		"mustache": "^4.0.0",
-		"request": "^2.88.2"
+		"mustache": "^4.0.0"
 	}
 }
