@@ -100,7 +100,7 @@ async function generateWords(listSize, quantity) {
 }
 
 /**
- * Get a .txt file from https://FHPWA.github.io/passwordgen/resources/
+ * Get a .txt file from https://fredhappyface.com/passwordgen/resources/
  *
  * @param {string} listSize
  * @return {promise} file
@@ -108,7 +108,7 @@ async function generateWords(listSize, quantity) {
 async function grabFile(listSize) {
 	return new Promise(function(resolve, _reject) {
 		const rawFile = new XMLHttpRequest();
-		rawFile.open("GET", "https://FHPWA.github.io/passwordgen/resources/" + listSize + ".txt");
+		rawFile.open("GET", "https://fredhappyface.com/passwordgen/resources/" + listSize + ".txt");
 		rawFile.onload = function() {
 			resolve(rawFile.responseText.split("\n"));
 		};
