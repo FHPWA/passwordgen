@@ -1,5 +1,5 @@
 [![Github top language](https://img.shields.io/github/languages/top/FHPWA/PasswordGen.svg?style=for-the-badge)](../../)
-[![Codacy grade](https://img.shields.io/codacy/grade/[codacy-proj-id].svg?style=for-the-badge)](https://www.codacy.com/manual/FHPWA/PasswordGen)
+[![Codacy grade](https://img.shields.io/codacy/grade/6c37d3696b1d465093212744b255b8e9.svg?style=for-the-badge)](https://www.codacy.com/gh/FHPWA/PasswordGen)
 [![Repository size](https://img.shields.io/github/repo-size/FHPWA/PasswordGen.svg?style=for-the-badge)](../../)
 [![Issues](https://img.shields.io/github/issues/FHPWA/PasswordGen.svg?style=for-the-badge)](../../issues)
 [![License](https://img.shields.io/github/license/FHPWA/PasswordGen.svg?style=for-the-badge)](/LICENSE.md)
