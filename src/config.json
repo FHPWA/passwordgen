@@ -1,8 +1,8 @@
 {
 	"base": {
-		"projectFullName": "passwordgen",
-		"projectShortName": "PasswordGen",
+		"projectName": "PasswordGen",
 		"stylesNamespace": "password",
+		"namespace": "passwordgen",
 		"projectColour": "#884BFA",
 		"isNavigation": true,
 		"precacheFiles": [
