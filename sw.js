@@ -1,5 +1,5 @@
 const CACHE = "PasswordGen";
-const precacheFiles = ["/passwordgen/","/passwordgen/index.html","/passwordgen/advanced.html","/passwordgen/check.html","/passwordgen/index.html","/passwordgen/advanced.html","/passwordgen/check.html",
+const precacheFiles = ["/passwordgen/","/passwordgen/index.html","/passwordgen/advanced.html","/passwordgen/check.html",
 ];
 
 /**
