@@ -108,7 +108,7 @@ async function generateWords(listSize, quantity) {
 async function grabFile(listSize) {
 	return new Promise(function(resolve, _reject) {
 		const rawFile = new XMLHttpRequest();
-		rawFile.open("GET", "../resources/" + listSize + ".txt");
+		rawFile.open("GET", "resources/" + listSize + ".txt");
 		rawFile.onload = function() {
 			resolve(rawFile.responseText.split("\n"));
 		};
