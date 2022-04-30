@@ -14,13 +14,13 @@ date: 2000-01-02
 <div>
 	<form>
 		<label for="words"> Words </label><br />
-		<input type="number" placeholder="Number of words. Eg. 10" id="words" /><br />
+		<input type="number" placeholder="Number of words. Eg. 10" id="words" />
 		<label for="numbers"> Numbers </label><br />
-		<input type="number" placeholder="Number of digits. Eg. 10" id="numbers" /><br />
+		<input type="number" placeholder="Number of digits. Eg. 10" id="numbers" />
 		<label for="symbols"> Symbols </label><br />
-		<input type="number" placeholder="Number of symbols. Eg. 10" id="symbols" /><br />
+		<input type="number" placeholder="Number of symbols. Eg. 10" id="symbols" />
 		<label for="ascii"> Random ASCII </label><br />
-		<input type="number" placeholder="Number of ASCII characters. Eg. 10" id="ascii" /><br />
+		<input type="number" placeholder="Number of ASCII characters. Eg. 10" id="ascii" />
 
 		<p>Shuffle?</p>
 
@@ -34,23 +34,23 @@ date: 2000-01-02
 
 		<p>Use custom wordlist?</p>
 		<input type="radio" name="customwl" value="1" id="customwl" /><label for="customwl">Yes</label><br />
-		<label for="files"> 🔼 Upload</label><br />
-		<input type="file" id="files" onchange="uploadWordslist()" /><br />
-
-		<textarea style="display: none" rows="20" cols="1" id="list"></textarea><br />
-
-
 		<input type="radio" name="customwl" value="2" id="customwl-no" checked="checked" /><label for="customwl-no">No</label><br />
+
+		<textarea style="display: none" rows="20" cols="1" id="list"></textarea>
+		<label type="button" for="files">🔼 Upload</label><br />
+		<input type="file" id="files" style="display:none;" onchange="uploadWordslist()" />
+
+
 		<label for="wordlist"> Wordlist </label><br />
 		<select id="wordlist">
 			<option value="1k">1k</option>
 			<option value="10k" selected="selected">10k</option>
 			<option value="100k">100k</option>
-		</select><br />
+		</select>
 		<label for="output"> Output: </label><br />
-		<textarea rows="4" cols="1" id="output"></textarea><br />
+		<textarea rows="4" cols="1" id="output"></textarea>
 		<label for="password-strength">Password Strength</label><br />
-		<progress id="password-strength" max="100" value="0"></progress><br />
+		<progress id="password-strength" max="100" value="0"></progress>
 	</form>
 	<div>
 		<button onclick="start()">🔃 Generate</button>

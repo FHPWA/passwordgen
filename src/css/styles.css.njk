@@ -130,6 +130,7 @@ a:hover {
 [role="button"],
 button,
 input[type="button"],
+label[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: none;
@@ -169,6 +170,8 @@ button:enabled:hover,
 button:focus,
 input[type="button"]:enabled:hover,
 input[type="button"]:focus,
+label[type="button"]:focus,
+label[type="button"]:hover,
 input[type="reset"]:enabled:hover,
 input[type="reset"]:focus,
 input[type="submit"]:enabled:hover,
@@ -335,6 +338,7 @@ input[type="radio"] {
 input[type="file"] {
 	border: 0;
 }
+
 hr {
 	color: var(--text);
 	border-top: 1px;
@@ -449,4 +453,8 @@ progress::-webkit-progress-value {
 }
 progress::-moz-progress-bar {
 	border-radius: .2rem;
+}
+
+label{
+	display: inline-block;
 }
