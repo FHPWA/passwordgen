@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.6.2
+    hooks:
+      - id: prettier
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v8.14.0
+    hooks:
+      - id: eslint
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: "dist/"
+      - id: end-of-file-fixer
+        exclude: "dist/"
+  - repo: https://github.com/boidolr/pre-commit-images
+    rev: v1.0.5
+    hooks:
+      - id: optimize-avif
+        exclude: "dist/"
+      - id: optimize-jpg
+        exclude: "dist/"
+      - id: optimize-png
+        exclude: "dist/"
+      - id: optimize-svg
+        exclude: "dist/"
+      - id: optimize-webp
+        exclude: "dist/"

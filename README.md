@@ -6,46 +6,63 @@
 [![Commit activity](https://img.shields.io/github/commit-activity/m/FHPWA/PasswordGen.svg?style=for-the-badge)](../../commits/master)
 [![Last commit](https://img.shields.io/github/last-commit/FHPWA/PasswordGen.svg?style=for-the-badge)](../../commits/master)
 
+<!-- omit in TOC -->
 # PasswordGen
 
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
 A dedicated password generator with optional larger wordlists
-Current options are 1k, 10k, 100k. Add symbols and numbers, shuffle and
-optionally capitalize the first character of each word.
 
-## Language information
-Built with HTML5 and CSS3
+## Features
 
+- Simple Password Gen: just click/ tap run and copy to the clipboard
+- Advanced Password Gen: use the provided, or a custom dictionary and configure the number
+  of words, numbers and symbols etc.
+- Check Password: check the password strength based on the Shannon Entropy (the password
+  strength is a guide only)
 
+- [Features](#features)
+- [Download Project](#download-project)
+	- [Clone](#clone)
+		- [Using The Command Line](#using-the-command-line)
+		- [Using GitHub Desktop](#using-github-desktop)
+	- [Download Zip File](#download-zip-file)
+- [Community Files](#community-files)
+	- [Licence](#licence)
+	- [Changelog](#changelog)
+	- [Code of Conduct](#code-of-conduct)
+	- [Contributing](#contributing)
+	- [Security](#security)
+	- [Support](#support)
+	- [Rationale](#rationale)
 
+## Download Project
 
-## Changelog
-See the [CHANGELOG](/CHANGELOG.md) for more information.
-
-
-## Download
 ### Clone
+
 #### Using The Command Line
+
 1. Press the Clone or download button in the top right
 2. Copy the URL (link)
 3. Open the command line and change directory to where you wish to
-clone to
+   clone to
 4. Type 'git clone' followed by URL in step 2
-```bash
-$ git clone https://github.com/FHPWA/PasswordGen
-```
+
+   ```bash
+   git clone https://github.com/FHPythonUtils/PyRlottie
+   ```
 
 More information can be found at
-<https://help.github.com/en/articles/cloning-a-repository>
+https://help.github.com/en/articles/cloning-a-repository
 
 #### Using GitHub Desktop
+
 1. Press the Clone or download button in the top right
 2. Click open in desktop
 3. Choose the path for where you want and click Clone
 
 More information can be found at
-<https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop>
+https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop
 
 ### Download Zip File
 
@@ -53,76 +70,49 @@ More information can be found at
 2. Extract the zip archive
 3. Copy/ move to the desired location
 
-## Licence
-BSD-2-CLAUSE-PATENT License
+## Community Files
+
+### Licence
+
+MIT License
 Copyright (c) FredHappyface
 (See the [LICENSE](/LICENSE.md) for more information.)
 
+### Changelog
 
-## Screenshots
+See the [Changelog](/CHANGELOG.md) for more information.
 
-### Desktop
-|Screenshots                                                                                  |
-|:-:                                                                                          |
-|<img src="readme-assets/screenshots/desktop/screenshot-0.png" alt="Screenshot 1" width="600">|
-|<img src="readme-assets/screenshots/desktop/screenshot-1.png" alt="Screenshot 2" width="600">|
-|<img src="readme-assets/screenshots/desktop/screenshot-2.png" alt="Screenshot 3" width="600">|
+### Code of Conduct
 
-### Mobile
-|Screenshots                                                                                 |                                                                                            |
-|:-:                                                                                         |:-:                                                                                         |
-|<img src="readme-assets/screenshots/mobile/screenshot-0.png" alt="Screenshot 1" width="300">|<img src="readme-assets/screenshots/mobile/screenshot-1.png" alt="Screenshot 2" width="300">|
-|<img src="readme-assets/screenshots/mobile/screenshot-2.png" alt="Screenshot 3" width="300">|<img src="readme-assets/screenshots/mobile/screenshot-3.png" alt="Screenshot 4" width="300">|
+Online communities include people from many backgrounds. The _Project_
+contributors are committed to providing a friendly, safe and welcoming
+environment for all. Please see the
+[Code of Conduct](https://github.com/FHPythonUtils/.github/blob/master/CODE_OF_CONDUCT.md)
+for more information.
 
+### Contributing
 
-### Themes
+Contributions are welcome, please see the
+[Contributing Guidelines](https://github.com/FHPythonUtils/.github/blob/master/CONTRIBUTING.md)
+for more information.
 
-|Light                                                                             |Dark                                                                              |Black                                                                             |
-|:-:                                                                               |:-:                                                                               |:-:                                                                               |
-|<img src="readme-assets/screenshots/themes/theme-0.png" alt="Theme 1" width="200">|<img src="readme-assets/screenshots/themes/theme-1.png" alt="Theme 2" width="200">|<img src="readme-assets/screenshots/themes/theme-2.png" alt="Theme 3" width="200">|
+### Security
 
+Thank you for improving the security of the project, please see the
+[Security Policy](https://github.com/FHPythonUtils/.github/blob/master/SECURITY.md)
+for more information.
 
-## Browser Support
+### Support
 
-### Supported
-FredHappyface PWAs are built with the following browsers in mind:
-Google Chrome
+Thank you for using this project, I hope it is of use to you. Please be aware that
+those involved with the project often do so for fun along with other commitments
+(such as work, family, etc). Please see the
+[Support Policy](https://github.com/FHPythonUtils/.github/blob/master/SUPPORT.md)
+for more information.
 
-<img src="readme-assets/browsers/chrome.png" alt="Google Chrome" width="200">
+### Rationale
 
-Chromium Based Browsers
-
-<img src="readme-assets/browsers/chromium.png" alt="Chromium" width="200">
-
-Safari
-
-<img src="readme-assets/browsers/safari.png" alt="Safari" width="200">
-
-Microsoft Edge (Chromium)
-
-<img src="readme-assets/browsers/edge.png" alt="Microsoft Edge (Chromium)" width="200">
-
-
-### Unsupported
-FredHappyface PWAs are not designed for the following browsers
-(though they may still run as expected in some cases, such as on
-Firefox). Functionality and visuals may not work as expected:
-Firefox
-
-<img src="readme-assets/browsers/firefox.png" alt="Firefox" width="200">
-
-Microsoft Edge (EdgeHTML)
-
-<img src="readme-assets/browsers/ms-edge.png" alt="Microsoft Edge (EdgeHTML)" width="200">
-
-Internet Explorer
-
-<img src="readme-assets/browsers/ie.png" alt="Internet Explorer" width="200">
-
-TOR Browser
-
-<img src="readme-assets/browsers/tor.png" alt="TOR Browser" width="200">
-
-Other Browsers
-
-<img src="readme-assets/browsers/browser.png" alt="Other Browsers" width="200">
+The rationale acts as a guide to various processes regarding projects such as
+the versioning scheme and the programming styles used. Please see the
+[Rationale](https://github.com/FHPythonUtils/.github/blob/master/RATIONALE.md)
+for more information.

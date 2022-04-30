@@ -1,0 +1,6 @@
+
+<nav id="js-nav">
+{%- for item in collections.page -%}
+<a {% if page.url == item.url %} aria-current="page"{% endif %} href="{{item.url}}">{{item.data.title}}</a>
+{%- endfor -%}
+</nav>

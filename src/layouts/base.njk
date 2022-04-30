@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+	<head>
+		<link rel="stylesheet" href="/css/styles.css" />
+
+		<script>
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("/{{ config.namespace }}/sw.js", {
+					scope: "/{{ config.namespace }}/",
+				})
+			}
+		</script>
+		<title>{{ title }}</title>
+		<!-- Icons -->
+		<!--Android app icon-->
+		<link rel="manifest" href="/{{ config.namespace }}/manifest.json" />
+		<meta name="theme-color" content="{{ config.color }}" />
+		<!--iOS touch icon-->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/appicons/square-180.png" />
+		<!--Windows 8, 10 tile -->
+		<meta name="msapplication-TileColor" content="{{ config.color }}" />
+		<meta name="msapplication-TileImage" sizes="150x150" content="images/appicons/square-180.png" />
+		<meta name="msapplication-starturl" content="/{{ config.namespace }}/" />
+		<!--Bookmark, Browser favicon -->
+		<link rel="icon" type="image/png" sizes="256x256" href="images/appicons/squircle-256.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="images/appicons/squircle-256.png" />
+		<!-- Meta -->
+		<meta
+			name="description"
+			content="{% if description %}{{ description }}{% else %}{{ config.description }}{% endif %}"
+		/>
+		<meta
+			name="keywords"
+			content="{% if keywords %}{{ keywords }}{% else %}{{ config.keywords }}{% endif %}"
+		/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+	</head>
+	<body>
+		<header>
+		<h1>{{ config.projectName }}</h1>
+		{% include "navigation.njk" %}</header>
+		<main>
+		{{ content | safe }}
+		</main>
+		{%- for item in scripts -%}
+		<script src="js/{{ item }}"></script>
+		{%- endfor -%}
+	</body>
+</html>

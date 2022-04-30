@@ -1,0 +1,24 @@
+---
+title: Simple
+layout: base
+tags: page
+permalink: index.html
+scripts: ["password.js"]
+date: 2000-01-01
+---
+<div>
+	<h1>Generate a password</h1>
+	<p>Tap/ click below to generate a password</p>
+</div>
+<div>
+	<form>
+		<label for="output"> Output: </label>
+		<textarea rows="4" cols="1" id="output"></textarea>
+		<label for="password-strength">Password Strength</label>
+		<progress id="password-strength" max="100" value="0"></progress>
+	</form>
+	<div>
+		<button onclick="start()">🔃 Generate</button>
+		<button onclick="copy()">📋 Copy Output</button>
+	</div>
+</div>

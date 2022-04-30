@@ -1,0 +1,23 @@
+---
+title: Check Password
+layout: base
+tags: page
+permalink: check.html
+scripts: ["password.js"]
+date: 2000-01-03
+---
+<div>
+	<h1>Check a password</h1>
+	<p>Tap/ click below to check the strength of a password</p>
+</div>
+<div>
+	<form>
+		<label for="input"> Input: </label>
+		<textarea rows="4" cols="1" id="input"></textarea>
+		<label for="password-strength">Password Strength</label>
+		<progress id="password-strength" max="100" value="0"></progress>
+	</form>
+	<div>
+		<button onclick="check()">✔ Check Password</button>
+	</div>
+</div>

@@ -1,28 +1,11 @@
 {
-	"name": "passwordgen",
-	"version": "1.0.0",
-	"description": "Holds common CSS and JS used by other web projects",
-	"main": "sw.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/fhpwa/passwordgen.git"
-	},
-	"author": "FredHappyface",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/fhpwa/passwordgen/issues"
-	},
-	"homepage": "https://github.com/fhpwa/passwordgen#readme",
 	"devDependencies": {
-		"eslint": "^7.17.0",
-		"eslint-config-google": "^0.14.0"
-	},
-	"dependencies": {
-		"axios": "^0.21.1",
-		"cheerio": "^1.0.0-rc.5",
-		"mustache": "^4.1.0"
+		"@11ty/eleventy": "^1.0.0",
+		"@squoosh/lib": "^0.4.0",
+		"eslint": "^8.14.0",
+		"html-minifier": "^4.0.0",
+		"minify": "^8.0.4",
+		"prettier": "^2.6.2",
+		"terser": "^5.13.0"
 	}
 }
