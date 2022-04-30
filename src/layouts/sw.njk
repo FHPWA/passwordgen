@@ -1,5 +1,5 @@
 const CACHE = "{{config.projectName}}";
-const precacheFiles = [{%- for item in collections.page -%}"{{config.namespace}}{{item.url}}",{%- endfor -%}
+const precacheFiles = [{%- for item in collections.page -%}"{{item.fileSlug}}",{%- endfor -%}
 ];
 /**
  * Check to see if the request is in the cache
