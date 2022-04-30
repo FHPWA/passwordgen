@@ -10,7 +10,7 @@ module.exports = function (config) {
 		templateFormats: ["html", "css", "js", "njk", "md"],
 		dir: {
 			input: "src",
-			output: "dist",
+			output: "docs",
 			includes: "includes",
 			layouts: "layouts",
 			data: "data",
