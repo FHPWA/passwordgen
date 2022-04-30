@@ -13,14 +13,6 @@
 
 A dedicated password generator with optional larger wordlists
 
-## Features
-
-- Simple Password Gen: just click/ tap run and copy to the clipboard
-- Advanced Password Gen: use the provided, or a custom dictionary and configure the number
-  of words, numbers and symbols etc.
-- Check Password: check the password strength based on the Shannon Entropy (the password
-  strength is a guide only)
-
 - [Features](#features)
 - [Download Project](#download-project)
 	- [Clone](#clone)
@@ -35,6 +27,14 @@ A dedicated password generator with optional larger wordlists
 	- [Security](#security)
 	- [Support](#support)
 	- [Rationale](#rationale)
+
+## Features
+
+- Simple Password Gen: just click/ tap run and copy to the clipboard
+- Advanced Password Gen: use the provided, or a custom dictionary and configure the number
+  of words, numbers and symbols etc.
+- Check Password: check the password strength based on the Shannon Entropy (the password
+  strength is a guide only)
 
 ## Download Project
 
