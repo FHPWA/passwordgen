@@ -5,7 +5,7 @@
 	"start_url": "/passwordgen/",
 	"display": "standalone",
 	"background_color": "#000000",
-	"theme_color": "",
+	"theme_color": "#884bfa",
 	"icons": [
 		{
 			"src": "/passwordgen/images/appicons/round-192.png",
