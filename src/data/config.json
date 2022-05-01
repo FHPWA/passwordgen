@@ -4,10 +4,5 @@
 	"accent": "#884bfa",
 	"accent_text": "#f5f7ff",
 	"description": "A dedicated password generator with optional larger wordlists",
-	"keywords": "password generator optional wordlists checker",
-	"shortcuts": [
-		{ "name": "Simple", "slug": "index" },
-		{ "name": "Advanced", "slug": "advanced" },
-		{ "name": "Check Password", "slug": "check" }
-	]
+	"keywords": "password generator optional wordlists checker"
 }

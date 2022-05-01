@@ -32,9 +32,9 @@ A dedicated password generator with optional larger wordlists
 
 - Simple Password Gen: just click/ tap run and copy to the clipboard
 - Advanced Password Gen: use the provided, or a custom dictionary and configure the number
-  of words, numbers and symbols etc.
+	of words, numbers and symbols etc.
 - Check Password: check the password strength based on the Shannon Entropy (the password
-  strength is a guide only)
+	strength is a guide only)
 
 ## Download Project
 
@@ -45,12 +45,12 @@ A dedicated password generator with optional larger wordlists
 1. Press the Clone or download button in the top right
 2. Copy the URL (link)
 3. Open the command line and change directory to where you wish to
-   clone to
+	 clone to
 4. Type 'git clone' followed by URL in step 2
 
-   ```bash
-   git clone https://github.com/FHPythonUtils/PyRlottie
-   ```
+	 ```bash
+	 git clone https://github.com/FHPythonUtils/PyRlottie
+	 ```
 
 More information can be found at
 https://help.github.com/en/articles/cloning-a-repository

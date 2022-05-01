@@ -23,15 +23,15 @@
 			"type": "image/png",
 			"purpose": "maskable"
 		}
-	]{% if config.shortcuts %},
+	],
 	"shortcuts": [
-		{%- for item in config.shortcuts -%}
+		{%- for item in collections.page -%}
 		{
-			"name": "{{item.name}}",
-			"url": "/{{config.namespace}}/{{item.slug}}.html",
+			"name": "{{item.data.title}}",
+			"url": "/{{config.namespace}}/{{item.fileSlug}}",
 			"icons": [
 				{
-					"src": "/{{config.namespace}}/images/shorticons/{{item.slug}}.png",
+					"src": "/{{config.namespace}}/images/shorticons/{{item.fileSlug | replace(".html", ".png")}}",
 					"sizes": "192x192",
 					"type": "image/png"
 				}
@@ -39,5 +39,4 @@
 		}{% if not loop.last %},{% endif %}
 		{%- endfor -%}
 	]
-	{% endif %}
 }

@@ -11,7 +11,6 @@ date: 2000-01-04
 
 A dedicated password generator with optional larger wordlists
 
-
 # Features
 
 - Simple Password Gen: just click/ tap run and copy to the clipboard
