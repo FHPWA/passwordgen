@@ -407,14 +407,10 @@ pre code {
 	padding: 0;
 }
 
-*,
-::after,
-::before {
+* {
 	word-wrap: break-word;
 	-webkit-user-select: none;
 	user-select: none;
-}
-* {
 	font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto,
 		Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
 	border-radius: .2rem;
@@ -429,6 +425,8 @@ textarea {
 	width: 100%;
 	resize: none;
 	font-family: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+	-webkit-user-select: text;
+	user-select: text;
 }
 body > header {
 	padding-bottom: 0;
