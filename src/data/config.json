@@ -1,6 +1,5 @@
 {
 	"projectName": "PasswordGen",
-	"namespace": "passwordgen",
 	"accent": "#884bfa",
 	"accent_text": "#f5f7ff",
 	"description": "A dedicated password generator with optional larger wordlists",

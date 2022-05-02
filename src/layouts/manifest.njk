@@ -2,23 +2,23 @@
 	"name": "{{config.projectName}}",
 	"short_name": "{{config.projectName}}",
 	"lang": "en-GB",
-	"start_url": "/{{config.namespace}}/",
+	"start_url": "index.html",
 	"display": "standalone",
 	"background_color": "#000000",
 	"theme_color": "{{config.accent}}",
 	"icons": [
 		{
-			"src": "/{{config.namespace}}/images/appicons/round-192.png",
+			"src": "images/appicons/round-192.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "/{{config.namespace}}/images/appicons/round-512.png",
+			"src": "images/appicons/round-512.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		},
 		{
-			"src": "/{{config.namespace}}/images/appicons/mask.png",
+			"src": "images/appicons/mask.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "maskable"
@@ -28,10 +28,10 @@
 		{%- for item in collections.page -%}
 		{
 			"name": "{{item.data.title}}",
-			"url": "/{{config.namespace}}/{{item.fileSlug}}",
+			"url": "{{item.fileSlug}}",
 			"icons": [
 				{
-					"src": "/{{config.namespace}}/images/shorticons/{{item.fileSlug | replace(".html", ".png")}}",
+					"src": "images/shorticons/{{item.fileSlug | replace(".html", ".png")}}",
 					"sizes": "192x192",
 					"type": "image/png"
 				}
