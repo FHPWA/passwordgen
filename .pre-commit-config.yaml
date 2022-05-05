@@ -3,6 +3,7 @@ repos:
     rev: v2.6.2
     hooks:
       - id: prettier
+        exclude: README.md
   - repo: https://github.com/pre-commit/mirrors-eslint
     rev: v8.14.0
     hooks:
@@ -18,12 +19,17 @@ repos:
     rev: v1.0.5
     hooks:
       - id: optimize-avif
+        args: ["--threshold", "0"]
         exclude: "dist/"
       - id: optimize-jpg
+        args: ["--threshold", "0"]
         exclude: "dist/"
       - id: optimize-png
+        args: ["--threshold", "0"]
         exclude: "dist/"
       - id: optimize-svg
+        args: ["--threshold", "0"]
         exclude: "dist/"
       - id: optimize-webp
+        args: ["--threshold", "0"]
         exclude: "dist/"
