@@ -5,7 +5,7 @@
 [![Commit activity](https://img.shields.io/github/commit-activity/m/FHPWA/PasswordGen.svg?style=for-the-badge)](../../commits/master)
 [![Last commit](https://img.shields.io/github/last-commit/FHPWA/PasswordGen.svg?style=for-the-badge)](../../commits/master)
 
-<!-- omit in TOC -->
+<!-- omit in toc -->
 # PasswordGen
 
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">

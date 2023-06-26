@@ -3,6 +3,14 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2023 - 2023/06/26
+
+Add:
+
+- `new_complex`: Generate complex password
+- `new_no_special`: Generate password with no special chars
+- `new_four_words`: Generate a four word password and seen on XKCD
+
 ## 2022 - 2022/04/30
 
 - Use 11ty + nunjucks + pre-commit in-place of build.js
