@@ -1,9 +1,8 @@
-[![Github top language](https://img.shields.io/github/languages/top/FHPWA/PasswordGen.svg?style=for-the-badge)](../../)
-[![Repository size](https://img.shields.io/github/repo-size/FHPWA/PasswordGen.svg?style=for-the-badge)](../../)
-[![Issues](https://img.shields.io/github/issues/FHPWA/PasswordGen.svg?style=for-the-badge)](../../issues)
-[![License](https://img.shields.io/github/license/FHPWA/PasswordGen.svg?style=for-the-badge)](/LICENSE.md)
-[![Commit activity](https://img.shields.io/github/commit-activity/m/FHPWA/PasswordGen.svg?style=for-the-badge)](../../commits/master)
-[![Last commit](https://img.shields.io/github/last-commit/FHPWA/PasswordGen.svg?style=for-the-badge)](../../commits/master)
+[![Github top language](https://img.shields.io/github/languages/top/FHPWA/PasswordGen.svg?style=for-the-badge&cacheSeconds=28800)](../../)
+[![Issues](https://img.shields.io/github/issues/FHPWA/PasswordGen.svg?style=for-the-badge&cacheSeconds=28800)](../../issues)
+[![License](https://img.shields.io/github/license/FHPWA/PasswordGen.svg?style=for-the-badge&cacheSeconds=28800)](/LICENSE.md)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/FHPWA/PasswordGen.svg?style=for-the-badge&cacheSeconds=28800)](../../commits/master)
+[![Last commit](https://img.shields.io/github/last-commit/FHPWA/PasswordGen.svg?style=for-the-badge&cacheSeconds=28800)](../../commits/master)
 
 <!-- omit in toc -->
 # PasswordGen
