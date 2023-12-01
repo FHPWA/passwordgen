@@ -47,7 +47,7 @@ A dedicated password generator with optional larger wordlists
 4. Type 'git clone' followed by URL in step 2
 
 	 ```bash
-	 git clone https://github.com/FHPythonUtils/PyRlottie
+	 git clone https://github.com/FHPWA/passwordgen
 	 ```
 
 More information can be found at
@@ -85,19 +85,19 @@ See the [Changelog](/CHANGELOG.md) for more information.
 Online communities include people from many backgrounds. The _Project_
 contributors are committed to providing a friendly, safe and welcoming
 environment for all. Please see the
-[Code of Conduct](https://github.com/FHPythonUtils/.github/blob/master/CODE_OF_CONDUCT.md)
+[Code of Conduct](https://github.com/FHPWA/.github/blob/master/CODE_OF_CONDUCT.md)
 for more information.
 
 ### Contributing
 
 Contributions are welcome, please see the
-[Contributing Guidelines](https://github.com/FHPythonUtils/.github/blob/master/CONTRIBUTING.md)
+[Contributing Guidelines](https://github.com/FHPWA/.github/blob/master/CONTRIBUTING.md)
 for more information.
 
 ### Security
 
 Thank you for improving the security of the project, please see the
-[Security Policy](https://github.com/FHPythonUtils/.github/blob/master/SECURITY.md)
+[Security Policy](https://github.com/FHPWA/.github/blob/master/SECURITY.md)
 for more information.
 
 ### Support
@@ -105,12 +105,12 @@ for more information.
 Thank you for using this project, I hope it is of use to you. Please be aware that
 those involved with the project often do so for fun along with other commitments
 (such as work, family, etc). Please see the
-[Support Policy](https://github.com/FHPythonUtils/.github/blob/master/SUPPORT.md)
+[Support Policy](https://github.com/FHPWA/.github/blob/master/SUPPORT.md)
 for more information.
 
 ### Rationale
 
 The rationale acts as a guide to various processes regarding projects such as
 the versioning scheme and the programming styles used. Please see the
-[Rationale](https://github.com/FHPythonUtils/.github/blob/master/RATIONALE.md)
+[Rationale](https://github.com/FHPWA/.github/blob/master/RATIONALE.md)
 for more information.
