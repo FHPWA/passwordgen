@@ -1,7 +1,7 @@
 {
-	"projectName": "PasswordGen",
-	"accent": "#7C3AED",
-	"accent_text": "#f5f7ff",
-	"description": "A dedicated password generator with optional larger wordlists",
-	"keywords": "password generator optional wordlists checker"
+  "projectName": "PasswordGen",
+  "accent": "#7C3AED",
+  "accent_text": "#f5f7ff",
+  "description": "A dedicated password generator with optional larger wordlists",
+  "keywords": "password generator optional wordlists checker"
 }

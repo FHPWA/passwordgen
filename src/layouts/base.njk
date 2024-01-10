@@ -11,20 +11,10 @@
 			}
 		</script>
 		<title>{{ title }}</title>
-		<!-- Icons -->
-		<!--Android app icon-->
 		<link rel="manifest" href="manifest.json" />
 		<meta name="theme-color" content="{{ config.accent }}" />
-		<!--iOS touch icon-->
 		<link rel="apple-touch-icon" sizes="180x180" href="images/appicons/square-180.png" />
-		<!--Windows 8, 10 tile -->
-		<meta name="msapplication-TileColor" content="{{ config.accent }}" />
-		<meta name="msapplication-TileImage" sizes="150x150" content="images/appicons/square-180.png" />
-		<meta name="msapplication-starturl" content="" />
-		<!--Bookmark, Browser favicon -->
-		<link rel="icon" type="image/png" sizes="256x256" href="images/appicons/squircle-256.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="images/appicons/squircle-256.png" />
-		<!-- Meta -->
+		<link rel="icon" type="image/png" sizes="256x256 32x32" href="images/appicons/squircle-256.png" />
 		<meta
 			name="description"
 			content="{% if description %}{{ description }}{% else %}{{ config.description }}{% endif %}"
